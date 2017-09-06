@@ -23,7 +23,7 @@ RUN DEBIAN_FRONTEND="noninteractive" apt-get -y upgrade
 RUN DEBIAN_FRONTEND="noninteractive" apt-get update --fix-missing
 RUN DEBIAN_FRONTEND="noninteractive" apt-cache policy search php7.1*
 RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install php7.1
-RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install php7.1-fpm php7.1-common php7.1-cli php7.1-mysqlnd php7.1-mcrypt php7.1-curl php7.1-bcmath php7.1-mbstring php7.1-soap php7.1-xml php7.1-zip php7.1-json php7.1-imap php-xdebug php-pgsql
+RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install php7.1-fpm php7.1-intl php7.1-common php7.1-cli php7.1-mysqlnd php7.1-mcrypt php7.1-curl php7.1-bcmath php7.1-mbstring php7.1-soap php7.1-xml php7.1-zip php7.1-json php7.1-imap php-xdebug php-pgsql
 
 # install nginx (full)
 RUN DEBIAN_FRONTEND="noninteractive" apt-get install -y nginx-full
