@@ -83,7 +83,7 @@ RUN chmod 755 /var/www
 ENV TERM=xterm
 
 # port and settings
-EXPOSE 80 9000
+EXPOSE 80 443 9000
 
 # cleanup apt and lists
 RUN apt-get clean
